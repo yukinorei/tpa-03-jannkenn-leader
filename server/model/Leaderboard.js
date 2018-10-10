@@ -32,8 +32,8 @@ class Leaderboard {
     return this.leadersMap[name].getStats();
   }
 
-  getWinningPercentage(player) {
-    return player.winPercentage;
+  getWinningPercentage(player, secondPlayer) {
+    return secondPlayer.winPercentage - player.winPercentage;
   }
 }
 
